@@ -8,13 +8,13 @@ class PostSidebar extends React.Component {
         marginLeft: -30
     }
     static defaultProps = {
-        shareUrl: "https://whitehoodhacker.net"
+        shareUrl: "https://samuelmf.com"
     }
     render() {
         return(
             <ScrollTracker>
                 <div style={this.sidebarStyle}>
-                    <p>Written by <br /><strong>WhiteHoodHacker</strong></p>
+                    <p>Written by <br /><strong>Sam</strong></p>
                     <p>Share this post!</p>
                     <ShareBanner shareUrl={this.props.shareUrl} />
                 </div>

@@ -9,6 +9,7 @@ import RevealAnimation from "../components/reveal-animation"
 import Seo from "../components/seo"
 
 class Home extends React.Component {
+    super
     render() {
         return (
             <div className="main-page h-100">
@@ -18,15 +19,14 @@ class Home extends React.Component {
                     <div className="container h-100">
                         <div className="row h-50 justify-content-center">
                             <div className="col-lg-7 col-md-6">
-                                <h1 className="main-reveal-text-short">Hi, I'm Minh.<br />I do cybersecurity.</h1>
+                                <h1 className="main-reveal-text-short">Hello, I am Sam!</h1>
                                 <div className="main-fade-in-animation">
-                                    <p>I am an 18 year old security researcher studying computer science at University of Illinois Urbana-Champaign.</p>
-                                    <p>In my free time, I play CTFs and code random things.</p>
+                                    <p>Bioengineer turned into fintech.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-7 col-8">
                                 <div className="main-fade-in-animation-delay-1">
-                                    <StaticImage width={300} height={300} className="main-fit-element main-circle" src="../img/portrait512.jpg" alt="Portrait" />
+                                    <StaticImage width={300} height={300} className="main-fit-element main-circle" src="../img/asdf.jpg" alt="Portrait" />
                                 </div>
                             </div>
                         </div>
@@ -39,63 +39,24 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section id="skills" className="container-fluid mb-5">
+                {/* <section id="skills" className="container-fluid mb-5">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-md-10 ">
                                 <RevealAnimation animationClass="main-reveal-text">
-                                    <h1>Here are my certifications.</h1>
-                                </RevealAnimation>
-                                <RevealAnimation animationClass="main-reveal-text-reverse">
-                                    <p>I am committed to reaching the highest standards and pushing the limits of my knowledge.</p>
+                                    <h1>Some of my favourite projects:</h1>
                                 </RevealAnimation>
                             </div>
                         </div>
                         <RevealAnimation animationClass="main-fade-in-animation">
-                            <div className="row align-items-center justify-content-center">
-                                <div className="col-md-3 col-sm-4 col-5">
-                                    <a aria-label="Offensive Security Certified Professional on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd8f0eb6-b98c-4207-a4e2-0f0f8bc17df2">
-                                        <StaticImage width={256} height={256} className="main-badge" src="../img/OSCP.png" alt="Offensive Security Certified Professional" />
-                                    </a>
-                                </div>
-                                <div className="col-md-7 col-12">
-                                    <div className="row justify-content-center">
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA IT Fundamentals on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/034299de-42cb-4a21-a645-54c9b17b94c2">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/ITF.png" alt="CompTIA ITF+" />
-                                            </a>
-                                        </div>
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA A+ on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/9e693b84-8452-488c-aaf3-16e77b41ced7">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/A.png" alt="CompTIA A+" />
-                                            </a>
-                                        </div>
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA Network+ on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/7e83577c-5acb-4fcc-89b6-2c81b58d63e4">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/Network.png" alt="CompTIA Network+" />
-                                            </a>
-                                        </div>
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA Security+ on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/76488e94-7792-404b-91cb-aabc7952c02f">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/Security.png" alt="CompTIA Security+" />
-                                            </a>
-                                        </div>
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA IT Operations Specialist on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/5f2a4560-2a6e-41e4-9dc8-8f0bddd6d459">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/CIOS.png" alt="CompTIA IT Operations Specialist" />
-                                            </a>
-                                        </div>
-                                        <div className="col-sm-4 col-5">
-                                            <a aria-label="CompTIA Secure Infrastructure Specialist on Credly" target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/e604fdf1-44b5-4e8f-9562-bf4da5e9800c">
-                                                <StaticImage width={200} height={200} className="main-badge" src="../img/CSIS.png" alt="CompTIA Secure Infrastructure Specialist" />
-                                            </a>
-                                        </div>
-                                    </div>
+                            <div className="row justify-content-center">
+                                <div className="col-md-10 ">
+                                    <p>Here shall be the projects</p>
                                 </div>
                             </div>
                         </RevealAnimation>
                     </div>
-                </section>
+                </section> */}
                 <section id="experiences" className="container-fluid mb-5">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -269,11 +230,15 @@ class Home extends React.Component {
                     <div className="container h-100">
                         <div className="row justify-content-center">
                             <div className="col-md-10">
+                                <RevealAnimation animationClass="main-reveal-text">
+                                    <h1>Hobbies and interests</h1>
+                                    <p>This shall be another list</p>
+                                </RevealAnimation>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="subscribe" className="container-fluid mb-5">
+                {/* <section id="subscribe" className="container-fluid mb-5">
                     <div className="container h-100">
                         <div className="row justify-content-center">
                             <div className="col-md-10 text-center">
@@ -301,7 +266,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <Footer />
             </div>
         )

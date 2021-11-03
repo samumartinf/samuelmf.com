@@ -1,15 +1,15 @@
 module.exports = {
     siteMetadata: {
-        title: `WhiteHoodHacker`,
-        description: `I am a security researcher studying computer science at University of Illinois Urbana-Champaign.`,
+        title: `SamuelMF`,
+        description: `London based nutcase`,
         social: {
             twitter: `WhiteHoodHacker`,
         },
         author: {
-            name: `WhiteHoodHacker`,
+            name: `Samumartinf`,
         },
-        siteUrl: `https://whitehoodhacker.net`, // Do not put trailing slash
-        image: `https://whitehoodhacker.net/icon256.png`,
+        siteUrl: `https://samuelmf.com`, // Do not put trailing slash
+        image: `https://samuelmf.com/weblogo.png`,
     },
     plugins: [
         `gatsby-plugin-create-page-html`,
@@ -21,7 +21,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-canonical-urls`,
             options: {
-              siteUrl: `https://whitehoodhacker.net`,
+              siteUrl: `https://samuelmf.com`,
               stripQueryString: true,
             }
         },
@@ -138,7 +138,7 @@ module.exports = {
                         }
                     `,
                         output: "/rss.xml",
-                        title: "WhiteHoodHacker.net Posts",
+                        title: "Samuelmf.com Posts",
                     },
                 ],
             },
