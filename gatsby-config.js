@@ -2,9 +2,6 @@ module.exports = {
     siteMetadata: {
         title: `SamuelMF`,
         description: `London based nutcase`,
-        social: {
-            twitter: `WhiteHoodHacker`,
-        },
         author: {
             name: `Samumartinf`,
         },

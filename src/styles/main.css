@@ -20,8 +20,8 @@
     --color-text: rgba(238, 238, 238, 1.0);
     --color-title: #dddddd;
     --color-title-inverse: #000000;
-    --color-primary: #0acc74;
-    --color-secondary: #118a53;
+    --color-primary: #f56200;
+    --color-secondary: #ff9741;
     --hr: hsla(0, 0%, 100%, 0.2);
 }
 html, body {

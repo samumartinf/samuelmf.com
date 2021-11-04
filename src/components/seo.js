@@ -26,7 +26,7 @@ const Seo = ({ title, description, image, twitter, lang, meta }) => {
     const loc_metaDescription = description || site.siteMetadata.description
     const loc_twitterCardType = image ? "summary_large_image" : "summary"
     const loc_image = image || site.siteMetadata.image
-    const loc_twitter = twitter || site.siteMetadata.social.twitter
+    //const loc_twitter = twitter || site.siteMetadata.social.twitter
 
     return (
         <Helmet
@@ -41,11 +41,11 @@ const Seo = ({ title, description, image, twitter, lang, meta }) => {
                 { property: "og:description", content: loc_metaDescription },
                 { property: "og:image", content: loc_image },
                 { property: "og:type", content: "website" },
-                { name: "twitter:card", content: loc_twitterCardType },
-                { name: "twitter:image", content: loc_image },
-                { name: "twitter:site", content: loc_twitter },
-                { name: "twitter:title", content: title },
-                { name: "twitter:description", content: loc_metaDescription },
+                // { name: "twitter:card", content: loc_twitterCardType },
+                // { name: "twitter:image", content: loc_image },
+                // { name: "twitter:site", content: loc_twitter },
+                // { name: "twitter:title", content: title },
+                // { name: "twitter:description", content: loc_metaDescription },
                 { name: "robots", content: "index, follow" },
                 { name: "theme-color", media: "(prefers-color-scheme: dark)", content: "#111111" },
                 { name: "theme-color", media: "(prefers-color-scheme: light)", content: "#f8f9fa" },
@@ -71,7 +71,7 @@ Seo.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     image: PropTypes.string,
-    twitter: PropTypes.string,
+    // twitter: PropTypes.string,
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
 }
