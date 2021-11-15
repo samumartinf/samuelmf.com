@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `SamuelMF`,
-        description: `London based nutcase`,
+        title: "Samuel Martin Frias",
+        description: `Site for a London based nutcase`,
         author: {
             name: `Samumartinf`,
         },
@@ -51,6 +51,14 @@ module.exports = {
                     `gatsby-remark-copy-linked-files`,
                 ],
             },
+        },
+        // This is part of the intro test
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+              name: `blog`,
+              path: `${__dirname}/blog`,
+            }
         },
         {
             resolve: `gatsby-plugin-sharp`,

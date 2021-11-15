@@ -11,9 +11,16 @@ import "prismjs/themes/prism-okaidia.css"
 import customWrapPageElement from "./src/components/wrap-page-element"
 export const wrapPageElement = customWrapPageElement
 
-// rewrite all .html browser URLs to clean non-trailing slash URLs
-// Cloudflare Pages hack to use non-trailing slashes by using gatsby-plugin-create-page-html and gatsby-plugin-remove-trailing-slashes
-// const replacePath = path => (path === `/` ? path : path.replace(/\.html$/, ``))
-// if (window.pagePath.endsWith('.html')) {
-//     window.pagePath = replacePath(window.pagePath)
-// }
+
+// // This is the new side of things
+// const React = require("react")
+// const Layout = require("./src/components/layout")
+// // Logs when the client route changes
+// exports.onRouteUpdate = ({ location, prevLocation }) => {
+//     console.log("new pathname", location.pathname)
+//     console.log("old pathname", prevLocation ? prevLocation.pathname : null)
+//   }
+//   // Wraps every page in a component
+//   exports.wrapPageElement = ({ element, props }) => {
+//     return <Layout {...props}>{element}</Layout>
+//   }

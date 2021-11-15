@@ -26,12 +26,12 @@ const PostTemplate = ({ data, location }) => {
                 <NavigationSpacer />
                 <div className="container flex-grow-1">
                     <div className="row justify-content-center">
-                        <div className="d-none d-xl-block col-xl-2">
+                        {/* <div className="d-none d-xl-block col-xl-2">
                             <PostSidebar shareUrl={postUrl} />
-                        </div>
+                        </div> */}
                         <div className="col-md-10 col-xl-8">
                             <p className="m-0 main-fade-in-animation">
-                                <Link to="/posts"><strong>← ../</strong></Link>
+                                <Link to="/posts"><strong>← blog/</strong></Link>
                             </p>
                             <article id="post-content" itemScope itemType="http://schema.org/Article">
                                 <header>
@@ -49,7 +49,7 @@ const PostTemplate = ({ data, location }) => {
                         </div>
                         <div className="d-none d-xl-block col-xl-2"></div>
                     </div>
-                    <div className="row justify-content-center">
+                    {/* <div className="row justify-content-center">
                         <div className="col-md-10 col-xl-8">
                             <p>Published {post.frontmatter.date}, by <strong>Sam</strong>.</p>
                             <SubscribeForm />
@@ -58,7 +58,7 @@ const PostTemplate = ({ data, location }) => {
                             <hr />
                             <PostFooter />
                         </div>
-                    </div>
+                    </div> */}
                     <nav className="mb-5">
                         <div className="row justify-content-center">
                             <div className="col-6 col-md-5 col-xl-4 text-start">

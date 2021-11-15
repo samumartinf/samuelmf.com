@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "./footer"
 import Navigation from "./navigation"
 
 export default function Layout({ children }) {
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
             <span>
                 {children}
             </span>
+            {/* <Footer /> */}
         </span>
     )
 }
